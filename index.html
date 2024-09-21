@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Flor amarilla</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <audio id="backgroundMusic" loop>
+        <source src="Flores Amarillas - Floricienta - High Quality.mp3" type="audio/mp3">
+        Tu navegador no soporta el audio HTML5.
+    </audio>
+
+    <div class="container">
+        <!-- Imagen de la flor animada -->
+        <div class="flower-container">
+            <img src="pngegg.png" alt="Flor amarilla" class="flower">
+        </div>
+
+        <!-- Texto con animación -->
+        <div class="text">
+            <h1>Feliz Dia ❤️</h1>
+        </div>
+
+        <!-- Botón para activar la música -->
+        <button id="playMusicButton">Dale play</button>
+    </div>
+
+    <script>
+        // Al hacer clic en el botón, la música comienza a reproducirse
+        document.getElementById('playMusicButton').addEventListener('click', function() {
+            const audio = document.getElementById('backgroundMusic');
+            audio.play();
+        });
+    </script>
+</body>
+</html>
